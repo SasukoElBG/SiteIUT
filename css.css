@@ -1,0 +1,36 @@
+.stars {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.stars span {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.1em;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.stars span:before {
+    content: '\2605'; /* Code Unicode pour l'étoile pleine */
+    position: absolute;
+    color: #f7941d;
+}
+
+.stars span:after {
+    content: '\2606'; /* Code Unicode pour l'étoile vide */
+    position: absolute;
+    color: #ccc;
+    top: 0.25em; /* Ajustez la position verticale pour superposer les étoiles */
+}
+
+.filled {
+    background-position: 0 0;
+}
+
+a.returnTOC
+{
+  text-align : center;
+  display : block;
+}
